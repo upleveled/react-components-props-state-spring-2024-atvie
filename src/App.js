@@ -1,19 +1,32 @@
+import ExampleArrayofObjects from './ExampleArrayofObjects.js';
+import ExampleChildrenProps from './ExampleChildrenProps.js';
 import ExampleClassToFunction from './ExampleClassToFunction.js';
 import ExampleComponents from './ExampleComponents.js';
 import ExampleConditionalRendering from './ExampleConditionalRendering.js';
+import ExampleControlledComponentsCheckboxes from './ExampleControlledComponentsCheckboxes.js';
+import ExampleDataFetching from './ExampleDataFetching.js';
 import ExampleFormsWithControlledComponents from './ExampleFormsWithControlledComponents.js';
 import ExampleLiftingStateUp from './ExampleLiftingStateUp.js';
 import ExampleMappingOverArrays from './ExampleMappingOverArrays.js';
 import ExampleProps from './ExampleProps.js';
 import ExamplePropsDestructuring from './ExamplePropsDestructuring.js';
+import ExamplePropTypes from './ExamplePropTypes.js';
+import ExampleReactAntipatterns from './ExampleReactAntipatterns.js';
 import ExampleStateCounter from './ExampleStateCounter.js';
 import ExampleStateEmail from './ExampleStateEmail.js';
 import ExampleStateNotSynchronous from './ExampleStateNotSynchronous.js';
 import ExampleStylingOptions from './ExampleStylingOptions.js';
+import ExampleUseEffect from './ExampleUseEffect.js';
 
 export default function App() {
   return (
     <>
+      <h1>Example: Data Fetching</h1>
+      <ExampleDataFetching />
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>Example: Import and Export Components</h1>
       <ExampleComponents />
       <br />
@@ -110,16 +123,38 @@ export default function App() {
       <br />
       <br />
       <br />
+      <h1>Example: React Antipatterns</h1>
+      <ExampleReactAntipatterns />
       <br />
       <br />
       <br />
       <br />
+      <h1>Example: Controlled Components with Checkboxes</h1>
+      <ExampleControlledComponentsCheckboxes />
       <br />
       <br />
       <br />
       <br />
+      <h1>Example: Array of Objects</h1>
+      <ExampleArrayofObjects />
       <br />
       <br />
+      <br />
+      <br />
+      <h1>Example: UseEffect</h1>
+      <ExampleUseEffect />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: Children Props</h1>
+      <ExampleChildrenProps />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: Prop Types</h1>
+      <ExamplePropTypes />
     </>
   );
 }
