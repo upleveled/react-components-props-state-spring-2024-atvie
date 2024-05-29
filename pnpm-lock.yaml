@@ -11,6 +11,9 @@ importers:
       '@upleveled/react-scripts':
         specifier: 5.0.13
         version: 5.0.13(@types/babel__core@7.20.5)(eslint@8.57.0)(react@18.3.1)(sass@1.77.1)(type-fest@0.21.3)(typescript@5.4.5)
+      '@xstate/react':
+        specifier: ^4.1.1
+        version: 4.1.1(@types/react@18.3.2)(react@18.3.1)(xstate@5.13.0)
       prop-types:
         specifier: ^15.8.1
         version: 15.8.1
@@ -23,6 +26,9 @@ importers:
       sass:
         specifier: 1.77.1
         version: 1.77.1
+      xstate:
+        specifier: ^5.13.0
+        version: 5.13.0
     devDependencies:
       '@jest/globals':
         specifier: ^29.7.0
@@ -1548,6 +1554,15 @@ packages:
 
   '@webassemblyjs/wast-printer@1.12.1':
     resolution: {integrity: sha512-+X4WAlOisVWQMikjbcvY2e0rwPsKQ9F688lksZhBcPycBBuii3O7m8FACbDMWDojpAqvjIncrG8J0XHKyQfVeA==}
+
+  '@xstate/react@4.1.1':
+    resolution: {integrity: sha512-pFp/Y+bnczfaZ0V8B4LOhx3d6Gd71YKAPbzerGqydC2nsYN/mp7RZu3q/w6/kvI2hwR/jeDeetM7xc3JFZH2NA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      xstate: ^5.11.0
+    peerDependenciesMeta:
+      xstate:
+        optional: true
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -5424,6 +5439,20 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
+  use-isomorphic-layout-effect@1.1.2:
+    resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
+  use-sync-external-store@1.2.2:
+    resolution: {integrity: sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
@@ -5640,6 +5669,9 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  xstate@5.13.0:
+    resolution: {integrity: sha512-Z0om784N5u8sAzUvQJBa32jiTCIGGF/2ZsmKkerQEqeeUktAeOMK20FIHFUMywC4GcAkNksSvaeX7lwoRNXPEQ==}
 
   y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
@@ -7581,6 +7613,16 @@ snapshots:
     dependencies:
       '@webassemblyjs/ast': 1.12.1
       '@xtuc/long': 4.2.2
+
+  '@xstate/react@4.1.1(@types/react@18.3.2)(react@18.3.1)(xstate@5.13.0)':
+    dependencies:
+      react: 18.3.1
+      use-isomorphic-layout-effect: 1.1.2(@types/react@18.3.2)(react@18.3.1)
+      use-sync-external-store: 1.2.2(react@18.3.1)
+    optionalDependencies:
+      xstate: 5.13.0
+    transitivePeerDependencies:
+      - '@types/react'
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -12022,6 +12064,16 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
+  use-isomorphic-layout-effect@1.1.2(@types/react@18.3.2)(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.2
+
+  use-sync-external-store@1.2.2(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
   util-deprecate@1.0.2: {}
 
   util.promisify@1.0.1:
@@ -12377,6 +12429,8 @@ snapshots:
       signal-exit: 4.1.0
 
   ws@8.17.0: {}
+
+  xstate@5.13.0: {}
 
   y18n@5.0.8: {}
 

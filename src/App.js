@@ -1,19 +1,25 @@
 import ExampleArrayofObjects from './ExampleArrayofObjects.js';
 import ExampleChildrenProps from './ExampleChildrenProps.js';
+import ExampleChildrenPropsVsPropDrilling from './ExampleChildrenPropsVsPropDrilling.js';
 import ExampleClassToFunction from './ExampleClassToFunction.js';
 import ExampleComponents from './ExampleComponents.js';
 import ExampleConditionalRendering from './ExampleConditionalRendering.js';
 import ExampleControlledComponentsCheckboxes from './ExampleControlledComponentsCheckboxes.js';
 import ExampleDataFetching from './ExampleDataFetching.js';
+import ExampleDataModeling from './ExampleDataModeling.js';
+import ExampleDerivingState from './ExampleDerivingState.js';
 import ExampleFormsWithControlledComponents from './ExampleFormsWithControlledComponents.js';
 import ExampleLiftingStateUp from './ExampleLiftingStateUp.js';
 import ExampleMappingOverArrays from './ExampleMappingOverArrays.js';
+import ExamplePropDrilling from './ExamplePropDrilling.js';
+import ExamplePropDrillingChildrenProp from './ExamplePropDrilling.js';
 import ExampleProps from './ExampleProps.js';
 import ExamplePropsDestructuring from './ExamplePropsDestructuring.js';
 import ExamplePropTypes from './ExamplePropTypes.js';
 import ExampleReactAntipatterns from './ExampleReactAntipatterns.js';
 import ExampleStateCounter from './ExampleStateCounter.js';
 import ExampleStateEmail from './ExampleStateEmail.js';
+import ExampleStateManagement from './ExampleStateManagement.js';
 import ExampleStateNotSynchronous from './ExampleStateNotSynchronous.js';
 import ExampleStylingOptions from './ExampleStylingOptions.js';
 import ExampleUseEffect from './ExampleUseEffect.js';
@@ -155,6 +161,62 @@ export default function App() {
       <br />
       <h1>Example: Prop Types</h1>
       <ExamplePropTypes />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: Data Modeling</h1>
+      <ExampleDataModeling />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: Deriving State vs. Extra State Variable</h1>
+      <ExampleDerivingState />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: Prop Drilling</h1>
+      <ExamplePropDrilling />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: Children Prop</h1>
+      <ExampleChildrenPropsVsPropDrilling />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1>Example: State Management</h1>
+      <ExampleStateManagement />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }
