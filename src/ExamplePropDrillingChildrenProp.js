@@ -17,7 +17,7 @@ function Header(props) {
   );
 }
 
-export default function ExampleChildrenPropsVsPropDrilling() {
+export default function ExamplePropDrillingChildrenProp() {
   const user = { name: 'Antje' };
   return (
     <div>

@@ -1,6 +1,5 @@
 import ExampleArrayofObjects from './ExampleArrayofObjects.js';
 import ExampleChildrenProps from './ExampleChildrenProps.js';
-import ExampleChildrenPropsVsPropDrilling from './ExampleChildrenPropsVsPropDrilling.js';
 import ExampleClassToFunction from './ExampleClassToFunction.js';
 import ExampleComponents from './ExampleComponents.js';
 import ExampleConditionalRendering from './ExampleConditionalRendering.js';
@@ -185,7 +184,7 @@ export default function App() {
       <br />
       <br />
       <h1>Example: Children Prop</h1>
-      <ExampleChildrenPropsVsPropDrilling />
+      <ExamplePropDrillingChildrenProp />
       <br />
       <br />
       <br />
